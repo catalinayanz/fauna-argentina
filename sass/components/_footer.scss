@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgb(7, 34, 62);
+    color: $fontLight;
+    padding: 60 px 20px;
+
+    &__container {
+        @extend .container;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+    }
+}
+
+@media (min-width: &bpMedium) {
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

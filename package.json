@@ -1,0 +1,14 @@
+{
+  "name": "preentrega1-yanzon",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de practica de HTML y CSS del curso de **Desarrollo Web**",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

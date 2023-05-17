@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding-top: 0%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: aller;
+    src: url(../asset/ttf/Aller_Std_Bd.ttf) format("truetype");
+}
+@font-face {
+    font-family: roboto;
+    src: url(../asset/ttf/Roboto-Regular.ttf) format("truetype");
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+// extend
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
