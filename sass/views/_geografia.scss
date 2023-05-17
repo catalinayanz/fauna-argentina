@@ -1,0 +1,20 @@
+h3 {
+    font-family: aller;
+    color: white;
+    font-size: 24px;
+    margin: 5px;
+    padding: 15px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .geografia_cards {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  @media (min-width: $bpMedium) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
