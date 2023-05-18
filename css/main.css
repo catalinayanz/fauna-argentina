@@ -35,7 +35,6 @@ h3 {
 }
 
 .container, .header_container, .footer__container {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -57,12 +56,14 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.footer__container_list {
+  padding: 20px;
+}
 .footer__container_apn img {
   width: 100px;
   height: 100px;
 }
 .footer small {
-  align-items: center;
   color: rgba(240, 248, 255, 0.673);
 }
 
@@ -70,20 +71,25 @@ h3 {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   padding: 30px 20px;
 }
-.header_container .navbar {
+.header-fluid {
   display: flex;
-  justify-content: space-between;
 }
-.header_container .navbar .nav-item {
+.header_container {
+  width: 100%;
+  height: 250px;
+}
+.header_container_navbar-nav {
+  display: flex;
+}
+.header_container_navbar-nav .nav-item {
   padding: 15px;
   margin: 0 15px;
   color: whitesmoke;
   font-family: aller;
   font-size: 24px;
   display: flex;
-  align-items: center;
 }
-.header_container .navbar .nav-item a:hover {
+.header_container_navbar-nav .nav-item a:hover {
   text-shadow: 4px 3px 2px rgb(82, 223, 255);
 }
 .header_container a img {
@@ -96,6 +102,7 @@ main {
   background-color: rgb(86, 120, 155);
 }
 main h1 {
+  padding: 10px;
   font-family: aller;
   color: whitesmoke;
   display: flex;
@@ -106,18 +113,17 @@ main .flexbox_container {
   justify-content: center;
 }
 main .carousel {
+  padding: 10px;
   height: fit-content;
   width: fit-content;
 }
 main .carousel-item img {
   object-fit: contain;
 }
-main p {
-  font-family: roboto;
-  color: whitesmoke;
-  padding: 20px;
-  font-size: 20px;
-  line-height: 1.5;
+main .texto-cabecera-index {
+  padding: 15px;
+  display: grid;
+  text-align: center;
 }
 main .hero {
   padding: 60px 20px;
@@ -131,17 +137,21 @@ main .hero__container {
 }
 main .hero__container p {
   margin-bottom: 40px;
+  font-family: roboto;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.5;
 }
 main .hero__container iframe {
-  width: 100%;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
 
 @media (min-width: 768px) {
   .hero__container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
   }
 }
 h3 {
@@ -210,4 +220,45 @@ p {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.h1form {
+  display: flex;
+  justify-content: center;
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+}
+.form_container .form {
+  width: 100%;
+  height: 450px;
+  color: whitesmoke;
+  font-family: roboto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.form_container .label {
+  display: flex;
+  align-items: center;
+}
+.form_container input {
+  outline: 0;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.form_container input:focus {
+  border: 2px solid rgb(0, 185, 253);
+}
+.form_container .checkbox {
+  display: flex;
+}
+.form_container .button {
+  border-radius: 10px;
 }

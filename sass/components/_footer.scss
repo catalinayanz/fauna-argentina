@@ -10,7 +10,7 @@
         grid-template-columns: 1fr;
         gap: 50px;
         &_list {
-
+            padding: 20px;
         }
         &_apn {
             img {
@@ -25,7 +25,6 @@
         }
     }
     small {
-        align-items: center;
         color: rgba(240, 248, 255, 0.673);
     }
 }
