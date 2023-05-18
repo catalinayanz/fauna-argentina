@@ -5,7 +5,7 @@
     @extend .container;
      .navbar {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         .nav-item {
             padding: 15px;
             margin: 0 15px;
@@ -13,8 +13,6 @@
             font-family: aller;
             font-size: 24px;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             align-items: center;
          & a {
              &:hover{
@@ -30,14 +28,3 @@
     }
   }
 }
-
-@media (min-width: $bpMedium) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero__container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-    }
-  }
