@@ -48,13 +48,24 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }
-
-@media (min-width: bpMedium) {
+@media (min-width: 768px) {
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
+.footer__container_apn img {
+  width: 100px;
+  height: 100px;
+}
+.footer small {
+  align-items: center;
+  color: rgba(240, 248, 255, 0.673);
+}
+
 .header {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   padding: 30px 20px;
@@ -185,12 +196,13 @@ p {
   padding: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
   margin-block-end: 20px;
+  background-color: rgb(86, 120, 155);
 }
 
 .card__header img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 20px;
   object-fit: contain;
 }

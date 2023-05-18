@@ -36,3 +36,15 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
 }
+// mixin
+@mixin templateGrid($bp, $colDesktop) {
+    // vista mobile
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    // vista desktop
+    @media (min-width: $bp) {
+        grid-template-columns: repeat($colDesktop, 1fr);
+    }
+}

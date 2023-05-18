@@ -5,19 +5,27 @@
 
     &__container {
         @extend .container;
+        @include templateGrid($bpMedium, 4);
         display: grid;
         grid-template-columns: 1fr;
         gap: 50px;
+        &_list {
 
+        }
+        &_apn {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &_redes {
+        }
+        &_sumate {
+
+        }
     }
     small {
         align-items: center;
         color: rgba(240, 248, 255, 0.673);
-    }
-}
-
-@media (min-width: &bpMedium) {
-    .footer__container {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
