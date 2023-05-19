@@ -13,18 +13,21 @@
             padding: 20px;
         }
         &_apn {
+            padding: 20px;
             img {
                 width: 100px;
                 height: 100px;
             }
         }
         &_redes {
+            padding: 20px;
         }
         &_sumate {
-
+            padding: 20px;
         }
     }
-    small {
+     .small {
         color: rgba(240, 248, 255, 0.673);
+        text-align: center;
     }
 }

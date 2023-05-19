@@ -59,12 +59,22 @@ h3 {
 .footer__container_list {
   padding: 20px;
 }
+.footer__container_apn {
+  padding: 20px;
+}
 .footer__container_apn img {
   width: 100px;
   height: 100px;
 }
-.footer small {
+.footer__container_redes {
+  padding: 20px;
+}
+.footer__container_sumate {
+  padding: 20px;
+}
+.footer .small {
   color: rgba(240, 248, 255, 0.673);
+  text-align: center;
 }
 
 .header {
@@ -142,7 +152,7 @@ main .hero__container p {
   line-height: 1.5;
 }
 main .hero__container iframe {
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
