@@ -31,8 +31,7 @@ main {
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
+
     
      p {
         margin-bottom: 40px;
@@ -44,6 +43,7 @@ main {
      }
 
      iframe {
+      object-fit: contain;
         border-radius: 10px;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
     }

@@ -132,8 +132,6 @@ main .hero__container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
 }
 main .hero__container p {
   margin-bottom: 40px;
@@ -144,6 +142,7 @@ main .hero__container p {
   line-height: 1.5;
 }
 main .hero__container iframe {
+  object-fit: contain;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
