@@ -155,6 +155,7 @@ main .hero__container p {
   line-height: 1.5;
 }
 main .hero__container iframe {
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
