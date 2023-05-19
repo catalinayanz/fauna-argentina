@@ -34,6 +34,10 @@ h3 {
   color: whitesmoke;
 }
 
+h4 {
+  color: whitesmoke;
+}
+
 .container, .header_container, .footer__container {
   margin: 0 auto;
 }
