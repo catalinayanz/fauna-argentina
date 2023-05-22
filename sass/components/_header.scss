@@ -5,7 +5,7 @@
    &_container {
     @extend .container;
     width: 100%;
-    height: 250px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,8 +32,8 @@
       }
 
     a img{
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       padding: 15px;
     }
   }
