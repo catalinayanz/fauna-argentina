@@ -12,7 +12,22 @@ h3 {
   .geografia_cards {
     margin-top: 60px;
     padding: 0 20px;
-  }
+    &__link {
+      background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+      color: $fontLight;
+      padding: 15px 0;
+      border-radius: 10px;
+      font-size: 20px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-family: roboto;
+      transition: 1.5s;
+      &:hover {
+        background:  linear-gradient(90deg, #6582c7 0%, #2d67db 100%);
+      }
+    }
+}
   @media (min-width: $bpMedium) {
     .cards {
         grid-template-columns: repeat(2, 1fr);

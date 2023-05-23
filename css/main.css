@@ -63,24 +63,42 @@ h4 {
 .footer__container_list {
   padding: 20px;
 }
+.footer__container_list h4:hover {
+  color: rgb(0, 132, 255);
+}
 .footer__container_apn {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.footer__container_apn h4:hover {
+  color: rgb(0, 132, 255);
+}
 .footer__container_apn img {
   width: 85px;
   height: 85px;
+}
+.footer__container_apn img:hover {
+  color: rgb(167, 166, 166);
+  filter: drop-shadow(0 0 15px);
 }
 .footer__container_redes {
   padding: 20px;
 }
 .footer__container_redes a {
   padding: 5px;
+  transition: 0.5s linear;
+}
+.footer__container_redes a:hover {
+  color: floralwhite;
+  filter: drop-shadow(0 0 10px);
 }
 .footer__container_sumate {
   padding: 20px;
+}
+.footer__container_sumate h4:hover {
+  color: rgb(0, 132, 255);
 }
 .footer .small {
   color: rgba(240, 248, 255, 0.673);
@@ -90,35 +108,37 @@ h4 {
 .header {
   background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
 }
 .header_container {
   width: 100%;
   height: 150px;
+}
+.header_container .container-fluid {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+}
+.header_container .container-fluid a img {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+}
+.header_container .navbar-nav {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-.header_container .header-fluid {
-  display: flex;
-}
-.header_container_navbar-nav {
-  display: flex;
-}
-.header_container_navbar-nav .nav-item {
+.header_container .navbar-nav .nav-item {
   padding: 15px;
   margin: 0 15px;
   color: whitesmoke;
   font-family: aller;
   font-size: 24px;
 }
-.header_container_navbar-nav .nav-item a:hover {
+.header_container .navbar-nav .nav-item a:hover {
   text-shadow: 4px 3px 2px rgb(82, 223, 255);
-}
-.header_container a img {
-  width: 150px;
-  height: 150px;
-  padding: 15px;
 }
 
 main {
@@ -193,6 +213,21 @@ p {
   margin-top: 60px;
   padding: 0 20px;
 }
+.geografia_cards__link {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: whitesmoke;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: roboto;
+  transition: 1.5s;
+}
+.geografia_cards__link:hover {
+  background: linear-gradient(90deg, #6582c7 0%, #2d67db 100%);
+}
 
 @media (min-width: 768px) {
   .cards {
@@ -202,6 +237,21 @@ p {
 .familia-animal_cards {
   margin-top: 60px;
   padding: 0 20px;
+}
+.familia-animal_cards__link {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: whitesmoke;
+  padding: 15px 0;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: roboto;
+  transition: 1.5s;
+}
+.familia-animal_cards__link:hover {
+  background: linear-gradient(90deg, #6582c7 0%, #2d67db 100%);
 }
 
 .cards {
