@@ -112,6 +112,7 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
   position: sticky;
+  z-index: 99;
 }
 .header_container {
   width: 100%;
@@ -141,6 +142,11 @@ h4 {
   text-shadow: 4px 3px 2px rgb(82, 223, 255);
 }
 
+@media (max-width: 576px) {
+  .navbar-nav {
+    background-color: rgb(86, 120, 155);
+  }
+}
 main {
   background-color: rgb(86, 120, 155);
 }
@@ -224,6 +230,7 @@ p {
   text-align: center;
   font-family: roboto;
   transition: 1.5s;
+  margin-bottom: 5px;
 }
 .geografia_cards__link:hover {
   background: linear-gradient(90deg, #6582c7 0%, #2d67db 100%);
