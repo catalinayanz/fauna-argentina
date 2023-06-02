@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding-top: 0%;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: aller;
     src: url(../asset/ttf/Aller_Std_Bd.ttf) format("truetype");
 }
+
 @font-face {
     font-family: roboto;
     src: url(../asset/ttf/Roboto-Regular.ttf) format("truetype");
@@ -25,19 +27,28 @@ p {
     line-height: 1.5;
     color: $fontLight;
 }
+
 h1 {
     color: $fontLight;
 }
+
+h2 {
+    color: $fontLight;
+}
+
 h3 {
     color: $fontLight;
 }
+
 h4 {
     color: $fontLight;
 }
+
 // extend
 .container {
     margin: 0 auto;
 }
+
 // mixin
 @mixin templateGrid($bp, $colDesktop) {
     // vista mobile

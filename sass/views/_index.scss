@@ -1,5 +1,6 @@
 main {
-    background-color: rgb(86, 120, 155);
+  background-color: rgb(86, 120, 155);
+
   h1 {
     padding: 10px;
     font-family: aller;
@@ -7,52 +8,58 @@ main {
     display: flex;
     justify-content: center;
   }
+
   .flexbox_container {
     display: flex;
     justify-content: center;
   }
+
   .carousel {
     padding: 10px;
     height: fit-content;
     width: fit-content;
   }
+
   .carousel-item img {
     object-fit: contain;
   }
+
   .texto-cabecera-index {
     padding: 15px;
     display: grid;
     text-align: center;
   }
+
   .hero {
-        padding: 60px 20px;
-    
-     &__container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: grid;
+    padding: 60px 20px;
 
-    
-     p {
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+
+
+      p {
         margin-bottom: 40px;
-          font-family: roboto;
-          color: $fontLight;
-          padding: 20px;
-          font-size: 20px;
-          line-height: 1.5;
-     }
+        font-family: roboto;
+        color: $fontLight;
+        padding: 20px;
+        font-size: 20px;
+        line-height: 1.5;
+      }
 
-     iframe {
-      width: 100%;
+      iframe {
+        width: 100%;
         border-radius: 10px;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-    }
-    }
-    }
-}
-@media (min-width: $bpMedium) {
-    .hero__container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
+}
+
+@media (min-width: $bpMedium) {
+  .hero__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
