@@ -42,11 +42,22 @@
 
       }
     }
+    .navbar-toggler-icon {
+      background-color: $bgprimary;
+      border-radius: 5px;
+    }
   }
 }
 
 @media (max-width: $bpSmall) {
   .navbar-nav {
     background-color: rgb(86, 120, 155);
+}
+.nav-item {
+  & a {
+    &:hover {
+      text-shadow: 4px 3px 2px rgb(82, 223, 255);
+    }
   }
+}
 }

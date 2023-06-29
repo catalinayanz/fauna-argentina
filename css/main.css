@@ -145,10 +145,17 @@ h4 {
 .header_container .navbar-nav .nav-item a:hover {
   text-shadow: 4px 3px 2px rgb(82, 223, 255);
 }
+.header_container .navbar-toggler-icon {
+  background-color: rgb(86, 120, 155);
+  border-radius: 5px;
+}
 
 @media (max-width: 576px) {
   .navbar-nav {
     background-color: rgb(86, 120, 155);
+  }
+  .nav-item a:hover {
+    text-shadow: 4px 3px 2px rgb(82, 223, 255);
   }
 }
 main {
